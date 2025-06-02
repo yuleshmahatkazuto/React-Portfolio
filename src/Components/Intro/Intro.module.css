@@ -1,0 +1,62 @@
+.container {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -1.5px;
+  font-weight: bold;
+  z-index: 5;
+}
+.title span {
+  text-decoration: underline;
+  text-decoration-color: #4ee1a0;
+  text-decoration-thickness: 4px;
+}
+
+.info {
+  color: #d9d9d9;
+  font-size: 18px;
+  line-height: 28px;
+}
+.contactButton {
+  border-bottom: solid #4ee1a0;
+  width: fit-content;
+  padding: 10px;
+}
+
+.contactButton:hover {
+  color: #4ee1a0;
+  cursor: pointer;
+}
+
+hr {
+  margin-top: 65px;
+  color: #d9d9d9;
+}
+
+.profileImg {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  height: 485.8167px;
+  z-index: 1;
+}
+
+.container img[alt="rings"] {
+  position: absolute;
+  top: 100px;
+  left: -120px;
+}
+
+.container img[alt="circle"] {
+  position: absolute;
+  bottom: 120px;
+  right: 413px;
+  z-index: 100;
+  width: 100px;
+}

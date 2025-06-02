@@ -1,0 +1,26 @@
+.titleBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: bold;
+}
+
+.contactButton {
+  border-bottom: solid #4ee1a0;
+  padding: 7px;
+  line-height: 28px;
+}
+
+.cardArea {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 45px 0 0 0;
+  gap: 3rem 0;
+  padding-bottom: 70px;
+  justify-content: space-between;
+}
