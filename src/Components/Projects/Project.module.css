@@ -29,3 +29,18 @@
   padding-bottom: 70px;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .cardArea {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

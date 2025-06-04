@@ -56,3 +56,21 @@
 .overlay p:hover {
   color: #4ee1a0;
 }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+  }
+
+  .container img {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container img {
+    width: 320px;
+  }
+}
