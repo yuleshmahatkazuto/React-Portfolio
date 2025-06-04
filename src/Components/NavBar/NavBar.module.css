@@ -5,9 +5,9 @@
 .buttonBar {
   z-index: 2;
   padding-right: 1rem;
-}
-.buttonBar img {
-  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .buttonBar img:hover {
@@ -27,4 +27,12 @@
   right: 100px;
   height: 485.8167px;
   z-index: 1;
+}
+.icon {
+  color: #151515;
+}
+
+.icon:hover {
+  color: #4ee1a0;
+  cursor: pointer;
 }

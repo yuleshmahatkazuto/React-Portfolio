@@ -6,6 +6,10 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   function handleEmailChange(event) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (event.target.value === "") {
@@ -36,7 +40,7 @@ const Contact = () => {
       </div>
 
       <div className={styles.form}>
-        <form method="POST">
+        <form method="POST" onSubmit={handleSubmit}>
           <input
             name="name"
             placeholder="NAME"
@@ -75,7 +79,13 @@ const Contact = () => {
       <hr></hr>
       <h2>yuleshmahat</h2>
       <div className={styles.buttonBar}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="24"
+          className={styles.icon}
+          name="Github"
+        >
           <path
             fill="currentColor"
             fill-rule="evenodd"
@@ -87,6 +97,7 @@ const Contact = () => {
           width="25"
           height="24"
           className={styles.icon}
+          name="Linkedin"
         >
           <path
             fill="currentColor"

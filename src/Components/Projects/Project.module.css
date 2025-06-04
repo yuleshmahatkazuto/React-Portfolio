@@ -16,6 +16,11 @@
   line-height: 28px;
 }
 
+.contactButton:hover {
+  cursor: pointer;
+  color: #4ee1a0;
+}
+
 .cardArea {
   display: grid;
   grid-template-columns: auto auto;
