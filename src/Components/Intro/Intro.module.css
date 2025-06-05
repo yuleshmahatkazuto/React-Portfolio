@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  overflow-x: hidden;
 }
 
 .title {
@@ -59,4 +60,27 @@ hr {
   right: 413px;
   z-index: 100;
   width: 100px;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .profileImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 485.8167px;
+    z-index: 1;
+  }
+
+  .container img[alt="circle"] {
+    position: absolute;
+    bottom: 61px;
+    right: -49px;
+    z-index: 100;
+    width: 100px;
+  }
+  .container img[alt="rings"] {
+    position: absolute;
+    top: 100px;
+    left: -300px;
+  }
 }
