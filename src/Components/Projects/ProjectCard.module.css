@@ -65,7 +65,7 @@
   }
 
   .container img {
-    width: 320px;
+    width: 350px;
   }
 
   .overlay {
@@ -83,12 +83,25 @@
     background-color: #151515;
     font-size: 16px;
   }
-
-  .overlay:hover {
-  }
 }
 @media screen and (max-width: 767px) {
   .container img {
     width: 320px;
+  }
+
+  .overlay {
+    display: flex;
+    gap: 10px;
+    line-height: 29px;
+    font-size: 16px;
+    opacity: 1;
+    transition: none;
+    position: static;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    background-color: #151515;
+    font-size: 16px;
   }
 }

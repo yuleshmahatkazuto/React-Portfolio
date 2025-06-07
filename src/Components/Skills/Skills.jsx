@@ -13,6 +13,7 @@ function Skills() {
       <Items title="PostgreSQL" experience="2" />
       <Items title="Bootstrap" experience="2" />
       <img src="/Assets/images/pattern-rings.svg" alt="rings" />
+      <hr></hr>
     </div>
   );
 }

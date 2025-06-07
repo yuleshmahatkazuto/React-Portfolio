@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  overflow-x: hidden;
+  position: relative;
 }
 
 .title {
@@ -23,6 +23,7 @@
   color: #d9d9d9;
   font-size: 18px;
   line-height: 28px;
+  max-width: 400px;
 }
 .contactButton {
   border-bottom: solid #4ee1a0;
@@ -36,51 +37,104 @@
 }
 
 hr {
-  margin-top: 65px;
+  margin-top: 30px;
   color: #d9d9d9;
 }
 
 .profileImg {
   position: absolute;
-  top: 0;
-  right: 100px;
+  top: -141px;
+  right: 0;
   height: 485.8167px;
   z-index: 1;
 }
 
 .container img[alt="rings"] {
   position: absolute;
-  top: 100px;
-  left: -120px;
+  top: -80px;
+  left: -290px;
 }
 
 .container img[alt="circle"] {
   position: absolute;
-  bottom: 120px;
-  right: 413px;
+  bottom: 135px;
+  right: 313px;
   z-index: 100;
   width: 100px;
+}
+
+.secondContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  z-index: 200;
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .profileImg {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -141px;
+    right: -29px;
     height: 485.8167px;
     z-index: 1;
   }
 
   .container img[alt="circle"] {
     position: absolute;
-    bottom: 61px;
-    right: -49px;
+    top: 245px;
+    right: -78px;
     z-index: 100;
     width: 100px;
   }
   .container img[alt="rings"] {
     position: absolute;
-    top: 100px;
+    top: -80px;
     left: -300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profileImg {
+    position: absolute;
+    top: -155px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 485.8167px;
+    z-index: 1;
+  }
+
+  .secondContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 400px;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .secondContainer h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .secondContainer p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .secondContainer hr {
+    width: 100%;
+  }
+
+  .container img[alt="circle"] {
+    position: absolute;
+    top: 232px;
+    right: -78px;
+    z-index: 100;
+    width: 100px;
+  }
+
+  .info {
+    max-width: 100%;
   }
 }
