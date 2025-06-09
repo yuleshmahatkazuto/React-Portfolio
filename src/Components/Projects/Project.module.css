@@ -1,0 +1,46 @@
+.titleBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: bold;
+}
+
+.contactButton {
+  border-bottom: solid #4ee1a0;
+  padding: 7px;
+  line-height: 28px;
+}
+
+.contactButton:hover {
+  cursor: pointer;
+  color: #4ee1a0;
+}
+
+.cardArea {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 45px 0 0 0;
+  gap: 3rem 0;
+  padding-bottom: 70px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .cardArea {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

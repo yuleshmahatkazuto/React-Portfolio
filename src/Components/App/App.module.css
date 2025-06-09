@@ -1,0 +1,24 @@
+.container1 {
+  padding: 20px 100px 0 100px;
+  background-color: #151515;
+}
+
+.container2 {
+  padding: 20px 100px 0 100px;
+  background-color: #242424;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .container1 {
+    padding: 10px 30px 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container1 {
+    padding: 0px 10px 0 10px;
+  }
+  .container2 {
+    padding: 0px 10px 0 10px;
+  }
+}
