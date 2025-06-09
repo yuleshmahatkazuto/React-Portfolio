@@ -69,6 +69,13 @@
   gap: 37px;
   z-index: 200;
 }
+.container a {
+  text-decoration: none;
+}
+
+.container a:visited {
+  color: inherit;
+}
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .profileImg {
