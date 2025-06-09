@@ -1,13 +1,32 @@
 import React, { useState } from "react";
 import styles from "./Contact.module.css";
+import axios from "axios";
 
 const Contact = () => {
   const [email, setEmail] = useState({ email: "", valid: true });
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
+    if (email.valid) {
+      try {
+        const result = await axios.post("/api/contact", {
+          name,
+          email: email.email,
+          message,
+        });
+        if (result.data.success) {
+          alert("Message sent successfully");
+        } else {
+          alert("Failed to send message");
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      alert("Invalid email format");
+    }
   }
 
   function handleEmailChange(event) {
@@ -75,7 +94,9 @@ const Contact = () => {
             }
             required
           />
-          <button type="submit">SEND MESSAGE</button>
+          <button type="submit" disabled={!email.valid ? true : false}>
+            SEND MESSAGE
+          </button>
         </form>
       </div>
 
