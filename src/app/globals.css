@@ -11,12 +11,12 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #dfdfdf;
   text-decoration: none;
 }
 
 a:visited {
-  color: inherit;
+  color: #dfdfdf;
 }
 
 @media (prefers-color-scheme: dark) {
